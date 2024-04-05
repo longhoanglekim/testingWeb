@@ -15,7 +15,7 @@ public class DBConnection {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			//step:2- create a connection
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dpapp","root","Long24062004");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dpapp","root","123456789");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
