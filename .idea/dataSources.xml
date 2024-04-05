@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dpapp" uuid="24ac8cb1-16d1-40a8-996a-ce3a16b5b76d">
+    <data-source source="LOCAL" name="dpapp" uuid="1bbc9e80-36c7-4536-8ba4-8cdf8bb527d5">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\Data_Lap_Trinh\KiemThuVaDamBaoChatLuongPhanMem\baoCao\testingWeb\dpapp.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:E:\Data_Lap_Trinh\KiemThuVaDamBaoChatLuongPhanMem\baoCao\testingWeb\src\main\resources\dpapp.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

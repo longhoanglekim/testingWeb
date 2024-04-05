@@ -30,8 +30,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBConnection {
-	private static Connection connection = null;
-	private final static String url = "jdbc:sqlite:data/dpapp.db";
+	private static Connection conn = null;
+	private static String url = "jdbc:sqlite:dpapp.db";
 
 
 	public String getUrl() {
@@ -41,27 +41,28 @@ public class DBConnection {
 	public DBConnection() {
 		try {
 			Class.forName("org.sqlite.JDBC");
-			connection = DriverManager.getConnection(url);
+			conn = DriverManager.getConnection(url);
 			System.out.println("SQLite kết nối thành công");
 		} catch (Exception e) {
+			System.out.println("_------------------------------------_");
 			System.out.println("SQLite kết nối thất bại " + e.getMessage());
 		}
 	}
 
 	public static Connection getConn() {
-		try {
-			Class.forName("org.sqlite.JDBC");
-			connection = DriverManager.getConnection(url);
-			System.out.println("SQLite kết nối thành công");
-		} catch (Exception e) {
-			System.out.println("SQLite kết nối thất bại " + e.getMessage());
-		}
-		return connection;
+//		try {
+//			Class.forName("org.sqlite.JDBC");
+//			conn = DriverManager.getConnection(url);
+//			System.out.println("SQLite kết nối thành công");
+//		} catch (Exception e) {
+//			System.out.println("SQLite kết nối thất bại " + e.getMessage());
+//		}
+		return conn;
 	}
 
 	public void closeConnection() {
 		try {
-			if (connection != null && !connection.isClosed()) {
+			if (conn != null && !conn.isClosed()) {
 				System.out.println("THÀNH CÔNG: Đã đóng kết nối với CSDL");
 			}
 		} catch (Exception e) {
